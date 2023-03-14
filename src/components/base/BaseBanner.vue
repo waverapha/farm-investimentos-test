@@ -11,7 +11,7 @@
     </div>
 
     <div class="b-banner__image">
-      <img src="@/assets/doctors.svg" alt="" />
+      <img src="@/assets/doctors.svg" alt="" width="433" height="410" />
     </div>
   </section>
 </template>
@@ -23,12 +23,19 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: 48em) {
+    gap: 1rem;
+  }
+
   &__content {
     display: flex;
     max-width: 40rem;
-    margin: -7.5rem 0 0 0;
     flex-direction: column;
     justify-content: center;
+
+    @media (min-width: 48em) {
+      margin: -7.5rem 0 0 0;
+    }
   }
 
   &__image {
@@ -40,7 +47,7 @@
   }
 
   &__title {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 6vw, 3.5rem);
   }
 }
 </style>

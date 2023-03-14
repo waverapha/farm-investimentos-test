@@ -6,7 +6,10 @@ $font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 
 $colors: (
   'text': 11 7% 29%,
-  'primary': 0 75% 98%,
+  // #4f4745
+  'primary': 12 71% 99%,
+  // #fefaf9
   'secondary': 0 82% 66%,
-  'tertiary': 0 0% 100%
+  // #ef6161
+  'tertiary': 0 0% 100% // #ffffff
 );
