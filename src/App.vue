@@ -2,7 +2,11 @@
   <BaseHeader />
   <main class="b-main flex-container flex-container--column">
     <BaseBanner />
-    <CountryList />
+    <Suspense>
+      <CountryList />
+
+      <template #fallback> Loading countries... </template>
+    </Suspense>
   </main>
 </template>
 
