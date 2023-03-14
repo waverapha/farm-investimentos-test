@@ -1,0 +1,48 @@
+@import './variables'; 
+
+:root {
+
+  @each $name,
+  $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --color-background: var(--vt-c-black);
+//     --color-background-soft: var(--vt-c-black-soft);
+//     --color-background-mute: var(--vt-c-black-mute);
+
+//     --color-border: var(--vt-c-divider-dark-2);
+//     --color-border-hover: var(--vt-c-divider-dark-1);
+
+//     --color-heading: var(--vt-c-text-dark-1);
+//     --color-text: var(--vt-c-text-dark-2);
+//   }
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: 400;
+}
+
+body {
+  min-height: 100vh;
+  color: hsl(var(--color-text));
+  background: linear-gradient(180deg, hsl(var(--color-primary)), hsl(var(--color-tertiary)));
+  transition: color 0.5s, background-color 0.5s;
+  font-family: $font;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: $heading-font;
+}

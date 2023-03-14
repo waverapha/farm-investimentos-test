@@ -1,0 +1,28 @@
+@import './_variables';
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0 1rem;
+  @extend .container;
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+}
+
+.heading-font {
+  font-family: $heading-font;
+}
