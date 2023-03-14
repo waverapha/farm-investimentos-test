@@ -21,8 +21,14 @@
 <style lang="scss">
 .b-banner {
   display: flex;
+  justify-content: space-between;
 
   &__content {
+    display: flex;
+    max-width: 40rem;
+    margin: -7.5rem 0 0 0;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__image {
@@ -31,6 +37,10 @@
     @media (min-width: 48em) {
       display: block;
     }
+  }
+
+  &__title {
+    font-size: 3.5rem;
   }
 }
 </style>

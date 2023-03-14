@@ -1,4 +1,4 @@
-@import './variables'; 
+@import './variables';
 
 :root {
 
@@ -28,7 +28,7 @@
   box-sizing: border-box;
   margin: 0;
   position: relative;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 body {
@@ -42,7 +42,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $heading-font;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1rem;
 }

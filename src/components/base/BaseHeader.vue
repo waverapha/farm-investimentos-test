@@ -17,8 +17,8 @@
   box-shadow: 0 0 0.75rem 0 hsl(var(--color-text) / 20%);
 
   @media (min-width: 64em) {
-    padding: 1rem;
     margin: 0 0 2.5rem 0;
+    padding: 1rem 0;
   }
 }
 </style>
