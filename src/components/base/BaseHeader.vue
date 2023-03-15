@@ -10,7 +10,7 @@
 
 <style lang="scss">
 .b-header {
-  z-index: 3;
+  z-index: 4;
   align-items: center;
   margin: 0 0 1.5rem 0;
   padding: 0.5rem 0;

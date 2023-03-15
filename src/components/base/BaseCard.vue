@@ -16,8 +16,9 @@
 
 <style lang="scss">
   .b-card {
-    padding: 1.5rem;
-    background: var(--color-tertiary);
-    box-shadow: 0 0 3px #333;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    background: hsl(var(--color-tertiary));
+    box-shadow: 0 0 3px hsl(var(--color-text) / 20%);
   }
 </style>
