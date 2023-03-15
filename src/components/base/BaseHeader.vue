@@ -1,7 +1,7 @@
 <template>
   <header class="b-header">
     <div class="flex-container">
-      <img src="@/assets/logo.png" alt="Logo do Covidômetro" />
+      <img src="@/assets/logo.png" alt="Logo do Covidômetro" width="164" height="40" />
     </div>
   </header>
 </template>
