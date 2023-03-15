@@ -35,6 +35,7 @@ export function useCountry() {
   }
 
   return {
+    MAX_INITIAL_COUNTRIES_TO_DISPLAY,
     filter,
     filteredCountries,
     isCachingData,

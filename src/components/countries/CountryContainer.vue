@@ -5,14 +5,24 @@
     <Suspense>
       <CountryList />
 
-      <template #fallback> Loading countries... </template>
+      <template #fallback>
+        <div class="country-list">
+          <CountryCardSkeleton v-for="index in MAX_INITIAL_COUNTRIES_TO_DISPLAY" :key="index" :height="202" />
+        </div>
+      </template>
     </Suspense>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { defineAsyncComponent } from 'vue';
 import CountryFilter from './CountryFilter.vue';
-import CountryList from './CountryList.vue';
+import CountryCardSkeleton from './CountryCardSkeleton.vue';
+import { useCountry } from '@/composables/country'
+
+const CountryList = defineAsyncComponent(() => import('./CountryList.vue'))
+
+const { MAX_INITIAL_COUNTRIES_TO_DISPLAY } = useCountry()
 </script>
 
 <style lang="scss">
