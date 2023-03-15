@@ -19,6 +19,6 @@
     padding: 2rem;
     border-radius: 0.25rem;
     background: hsl(var(--color-tertiary));
-    box-shadow: 0 0 3px hsl(var(--color-text) / 20%);
+    box-shadow: 0 0 0.1875rem 0.0625rem hsl(var(--color-text) / 7.5%);
   }
 </style>
