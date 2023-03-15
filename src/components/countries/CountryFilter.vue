@@ -35,8 +35,11 @@ const handleUpdateFilter = (event: Event) => {
   &__input {
     display: grid;
     align-items: center;
-    width: 80%;
     margin: 1rem auto 0 auto;
+
+    @media (min-width: 48em) {
+      width: 80%;
+    }
 
     &-icon {
       grid-area: -1 / -1;

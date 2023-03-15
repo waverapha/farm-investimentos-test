@@ -47,6 +47,7 @@
   }
 
   &__title {
+    margin: 0 0 0.5rem 0;
     font-size: clamp(2rem, 6vw, 3.5rem);
   }
 }

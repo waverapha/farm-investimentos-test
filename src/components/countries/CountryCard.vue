@@ -44,8 +44,13 @@ const fatality = computed(() => ((props.country.TotalDeaths / props.country.Tota
 
     &__informations {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-between;
+
+      @media (min-width: 48em) {
+        flex-direction: row;
+      }
     }
 
     &__title {
