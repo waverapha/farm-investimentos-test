@@ -24,14 +24,11 @@ export function useCountry() {
   const filteredCountries = computed(() => {
     let countries = allCountries
 
-    if (!filter.value) {
-      return countries
-    } else {
+    if (filter.value) {
       countries = allCountries.filter((country) => country.Country.toLowerCase().includes(filter.value.toLowerCase()))
     }
 
     return countries.slice(0, MAX_COUNTRIES_TO_DISPLAY)
-
   })
 
   return {
