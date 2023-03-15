@@ -1,9 +1,9 @@
 <template>
   <div class="country-container">
-    <CountryFilter @update-filter="handleUpdateFilter" />
+    <CountryFilter />
 
     <Suspense>
-      <CountryList :filter="filter" />
+      <CountryList />
 
       <template #fallback> Loading countries... </template>
     </Suspense>
@@ -11,15 +11,8 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
 import CountryFilter from './CountryFilter.vue';
 import CountryList from './CountryList.vue';
-
-const filter = ref('')
-
-const handleUpdateFilter = (filterTerm: string) => {
-  filter.value = filterTerm
-}
 </script>
 
 <style lang="scss">

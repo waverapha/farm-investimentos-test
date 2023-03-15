@@ -9,8 +9,8 @@
         type="search"
         aria-label="Digite o nome do país para buscar"
         placeholder="Digite o nome do país"
-        @input="$emit('update-filter', ($event.target as HTMLInputElement).value)"
-      >
+        @input="handleUpdateFilter"
+        >
     </div>
   </BaseCard>
 </template>
@@ -18,12 +18,13 @@
 <script lang="ts" setup>
 import BaseCard from '@/components/base/BaseCard.vue';
 import IconSearch from '@/components/icons/IconSearch.vue';
+import { useCountry } from '@/composables/country';
 
-export interface Emits {
-  (e: 'update-filter', value: string): void
+const { filter } = useCountry()
+
+const handleUpdateFilter = (event: Event) => {
+  filter.value = (event.target as HTMLInputElement).value
 }
-
-defineEmits<Emits>()
 </script>
 
 <style lang="scss">
