@@ -2,23 +2,37 @@
   <p class="country-list__no-data-message" v-if="isCachingData">Os dados sobre Covid estão sendo compilados nesse momento, volte mais tarde por favor.</p>
 
   <div class="country-list" v-else>
-    <CountryFilter />
-
-    <CountryCard v-for="country in Countries" :key="country.ID" :country="country" />
+    <CountryCard v-for="country in countries" :key="country.ID" :country="country" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { computed } from 'vue';
-import CountryFilter from './CountryFilter.vue'
 import CountryCard from './CountryCard.vue'
+import type { Country } from '@/types/country';
 
-const fetchCountries = async () => {
-  return (await fetch('https://api.covid19api.com/summary')).json()
+export interface Props {
+  filter: string
 }
 
-const { Global, Countries, Message } = await fetchCountries()
+const props = defineProps<Props>()
 
+const MAX_COUNTRIES_TO_DISPLAY = 5
+
+const fetchCountries = async () => (await fetch('https://api.covid19api.com/summary')).json()
+
+const { Countries: allCountries, Message }: { Countries: Country[], Message: string } = await fetchCountries()
+
+const filteredCountries = computed(() => {
+  if(!props.filter){
+    return allCountries
+  }
+
+  return allCountries
+    .filter((country) => country.Country.toLowerCase().includes(props.filter.toLowerCase()))
+})
+
+const countries = computed(() => filteredCountries.value.slice(0, MAX_COUNTRIES_TO_DISPLAY))
 const isCachingData = computed(() => Message === 'Caching in progress')
 </script>
 
@@ -28,13 +42,6 @@ const isCachingData = computed(() => Message === 'Caching in progress')
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 2rem 0 0 0;
-  padding: 0 1rem;
-
-  @media (min-width: 48em) {
-    margin: -6.75rem 0 0 0;
-    padding: 0 clamp(2.5rem, 15vw, 13rem);
-  }
 
   &__no-data-message {
     text-align: center;

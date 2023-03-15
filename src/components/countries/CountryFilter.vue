@@ -1,10 +1,16 @@
 <template>
-  <BaseCard tag="article" class="country-filter-card">
+  <BaseCard tag="article" class="country-filter">
     <h2>Filtrar dados sobre um país</h2>
 
-    <div class="country-filter-card__input">
-      <IconSearch class="country-filter-card__input-icon" />
-      <input class="country-filter-card__input-field" type="search" aria-label="Digite o nome do país para buscar" placeholder="Digite o nome do país">
+    <div class="country-filter__input">
+      <IconSearch class="country-filter__input-icon" />
+      <input
+        class="country-filter__input-field"
+        type="search"
+        aria-label="Digite o nome do país para buscar"
+        placeholder="Digite o nome do país"
+        @input="$emit('update-filter', ($event.target as HTMLInputElement).value)"
+      >
     </div>
   </BaseCard>
 </template>
@@ -13,10 +19,16 @@
 import BaseCard from '@/components/base/BaseCard.vue';
 import IconSearch from '@/components/icons/IconSearch.vue';
 
+export interface Emits {
+  (e: 'update-filter', value: string): void
+}
+
+defineEmits<Emits>()
 </script>
 
 <style lang="scss">
-.country-filter-card {
+.country-filter {
+  margin: 0 0 1.5rem 0;
   text-align: center;
 
   &__input {
