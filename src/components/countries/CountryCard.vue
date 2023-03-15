@@ -1,5 +1,5 @@
 <template>
-  <BaseCard />
+  <BaseCard tag="article" />
 </template>
 
 <script lang="ts" setup>
