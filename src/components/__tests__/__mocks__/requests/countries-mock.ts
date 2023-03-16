@@ -1,0 +1,39 @@
+export const countriesMock = {
+  ID: "a3e69d64-6029-4593-a219-3008ce57f7e1",
+  Date: "2023-03-16T09:10:21.046Z",
+  Message: "",
+  Global: { "NewConfirmed": 177325, "TotalConfirmed": 674300771, "NewDeaths": 1319, "TotalDeaths": 6793224, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T09:10:21.046Z" },
+  Countries: [
+    { "ID": "ae5f6e69-44cc-4200-9815-1048b8325b67", "Country": "Afghanistan", "CountryCode": "AF", "Slug": "afghanistan", "NewConfirmed": 0, "TotalConfirmed": 209451, "NewDeaths": 0, "TotalDeaths": 7896, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T09:10:21.046Z", "Premium": {} },
+    { "ID": "06dc1edd-8f1b-436f-917d-735f66e23dd9", "Country": "Albania", "CountryCode": "AL", "Slug": "albania", "NewConfirmed": 14, "TotalConfirmed": 334457, "NewDeaths": 0, "TotalDeaths": 3598, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T09:10:21.046Z", "Premium": {} },
+    { "ID": "cef738e9-9319-45db-9d4f-f354a92d53d3", "Country": "Algeria", "CountryCode": "DZ", "Slug": "algeria", "NewConfirmed": 2, "TotalConfirmed": 271496, "NewDeaths": 0, "TotalDeaths": 6881, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T09:10:21.046Z", "Premium": {} },
+
+    { "ID": "141da597-0728-43eb-857f-bdf1824007ec", "Country": "Bhutan", "CountryCode": "BT", "Slug": "bhutan", "NewConfirmed": 0, "TotalConfirmed": 62627, "NewDeaths": 0, "TotalDeaths": 21, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "0a2de249-a85b-41fb-8fd2-c10f79f900a6", "Country": "Bolivia", "CountryCode": "BO", "Slug": "bolivia", "NewConfirmed": 90, "TotalConfirmed": 1194277, "NewDeaths": 0, "TotalDeaths": 22365, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "77c99df2-b409-4e87-a27d-45c3afc9969b", "Country": "Bosnia and Herzegovina", "CountryCode": "BA", "Slug": "bosnia-and-herzegovina", "NewConfirmed": 0, "TotalConfirmed": 401729, "NewDeaths": 0, "TotalDeaths": 16280, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+
+    { "ID": "723f73cd-696e-41e1-9947-5a6d250ac9e7", "Country": "Congo (Kinshasa)", "CountryCode": "CD", "Slug": "congo-kinshasa", "NewConfirmed": 0, "TotalConfirmed": 95749, "NewDeaths": 0, "TotalDeaths": 1464, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "8a626dfe-f2f7-4d7c-8d15-84ce632e2a78", "Country": "Costa Rica", "CountryCode": "CR", "Slug": "costa-rica", "NewConfirmed": 0, "TotalConfirmed": 1209725, "NewDeaths": 0, "TotalDeaths": 9245, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "226719cf-9df2-4a09-a571-262f6967411f", "Country": "Croatia", "CountryCode": "HR", "Slug": "croatia", "NewConfirmed": 0, "TotalConfirmed": 1269326, "NewDeaths": 0, "TotalDeaths": 17987, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+
+    { "ID": "fc4fac98-b37c-4a70-904f-e8a203425aa7", "Country": "France", "CountryCode": "FR", "Slug": "france", "NewConfirmed": 6308, "TotalConfirmed": 39866718, "NewDeaths": 11, "TotalDeaths": 166176, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "f5e3cb6e-db38-420a-91de-2ae64f0281a6", "Country": "Gabon", "CountryCode": "GA", "Slug": "gabon", "NewConfirmed": 0, "TotalConfirmed": 48981, "NewDeaths": 0, "TotalDeaths": 306, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "6f3ef066-a0f9-4612-95a9-77765b908f3e", "Country": "Gambia", "CountryCode": "GM", "Slug": "gambia", "NewConfirmed": 0, "TotalConfirmed": 12598, "NewDeaths": 0, "TotalDeaths": 372, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+
+    { "ID": "050294af-e1b1-41a0-a0c4-8be6e553387c", "Country": "Iraq", "CountryCode": "IQ", "Slug": "iraq", "NewConfirmed": 0, "TotalConfirmed": 2465545, "NewDeaths": 0, "TotalDeaths": 25375, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "d39903e5-e837-40a8-8a1a-a1320d9b8437", "Country": "Ireland", "CountryCode": "IE", "Slug": "ireland", "NewConfirmed": 0, "TotalConfirmed": 1704502, "NewDeaths": 0, "TotalDeaths": 8708, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "787458c0-5280-4f92-87c6-dc2d6d140cb0", "Country": "Israel", "CountryCode": "IL", "Slug": "israel", "NewConfirmed": 660, "TotalConfirmed": 4803824, "NewDeaths": 4, "TotalDeaths": 12329, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+
+    { "ID": "a93bbec3-fa3e-4519-857a-1401c8f3a751", "Country": "Marshall Islands", "CountryCode": "MH", "Slug": "marshall-islands", "NewConfirmed": 0, "TotalConfirmed": 15649, "NewDeaths": 0, "TotalDeaths": 17, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "e4bcbc85-8152-4098-921d-1e2b1772e2f3", "Country": "Mauritania", "CountryCode": "MR", "Slug": "mauritania", "NewConfirmed": 0, "TotalConfirmed": 63668, "NewDeaths": 0, "TotalDeaths": 997, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "e2e65ba7-145f-46f2-865a-55d6b39b0e19", "Country": "Mauritius", "CountryCode": "MU", "Slug": "mauritius", "NewConfirmed": 0, "TotalConfirmed": 296042, "NewDeaths": 0, "TotalDeaths": 1044, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+
+    { "ID": "2cc16afb-df32-438a-b037-1f0b2423cd4b", "Country": "Uzbekistan", "CountryCode": "UZ", "Slug": "uzbekistan", "NewConfirmed": 0, "TotalConfirmed": 251247, "NewDeaths": 0, "TotalDeaths": 1637, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "859cb85a-60fc-404c-9e47-2913f24e06eb", "Country": "Vanuatu", "CountryCode": "VU", "Slug": "vanuatu", "NewConfirmed": 0, "TotalConfirmed": 12014, "NewDeaths": 0, "TotalDeaths": 14, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "feaa7316-62a2-47e0-ac1b-b853aaca5700", "Country": "Venezuela (Bolivarian Republic)", "CountryCode": "VE", "Slug": "venezuela", "NewConfirmed": 5, "TotalConfirmed": 552162, "NewDeaths": 0, "TotalDeaths": 5854, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "27bbba86-c5c6-4a7e-96bd-85ae722b59a6", "Country": "Viet Nam", "CountryCode": "VN", "Slug": "vietnam", "NewConfirmed": 0, "TotalConfirmed": 11526994, "NewDeaths": 0, "TotalDeaths": 43186, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "99ba20f7-cec9-4d2a-8115-10574954fead", "Country": "Yemen", "CountryCode": "YE", "Slug": "yemen", "NewConfirmed": 0, "TotalConfirmed": 11945, "NewDeaths": 0, "TotalDeaths": 2159, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "d7ed4f15-749f-4284-8272-9a612f5c27d9", "Country": "Zambia", "CountryCode": "ZM", "Slug": "zambia", "NewConfirmed": 0, "TotalConfirmed": 343135, "NewDeaths": 0, "TotalDeaths": 4057, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} },
+    { "ID": "8559b76c-086d-44f7-990f-c453687aa72e", "Country": "Zimbabwe", "CountryCode": "ZW", "Slug": "zimbabwe", "NewConfirmed": 0, "TotalConfirmed": 264276, "NewDeaths": 0, "TotalDeaths": 5671, "NewRecovered": 0, "TotalRecovered": 0, "Date": "2023-03-16T16:08:53.447Z", "Premium": {} }
+  ]
+}

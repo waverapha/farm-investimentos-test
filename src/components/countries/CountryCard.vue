@@ -1,5 +1,5 @@
 <template>
-  <BaseCard class="country-card" tag="article">
+  <BaseCard class="country-card" tag="article" data-testid="country-card">
     <h3 class="country-card__title">{{ country.Country }}</h3>
 
     <dl class="country-card__informations">
