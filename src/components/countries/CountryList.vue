@@ -23,7 +23,7 @@ import { useCountry } from '@/composables/country'
 import { useIntersectionObserver } from '@/composables/observer'
 
 const loadMoreHandler: Ref<Element | null> = ref(null)
-const { filteredCountries, getCountries, loadMoreCountries, isCachingData, message } = useCountry()
+const { filteredCountries, isCachingData, message, getCountries, loadMoreCountries } = useCountry()
 
 await getCountries()
 

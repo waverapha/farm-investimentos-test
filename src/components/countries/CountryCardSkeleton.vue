@@ -28,14 +28,15 @@ const skeletonStyle = computed(() => {
 <style lang="scss">
   .country-card-skeleton {
     animation: skeleton-loading 0.75s linear infinite alternate;
+    background-color: hsl(0, 0%, 75%);
   }
 
   @keyframes skeleton-loading {
     0% {
-      background-color: hsl(0, 0%, 85%);
+      opacity: 1;
     }
     100% {
-      background-color: hsl(0, 0%, 100%);
+      opacity: 0.5;
     }
   }
 </style>
