@@ -2,34 +2,35 @@
   <BaseCard class="country-list__no-data-message" v-if="isCachingData">
     Os dados sobre Covid estão sendo compilados nesse momento, volte mais tarde por favor.
   </BaseCard>
+  <BaseCard class="country-list__no-data-message" v-else-if="!isCachingData && message">
+    {{ message }}
+  </BaseCard>
 
-  <div class="country-list" v-else>
-    <CountryCard v-for="country in filteredCountries" :key="country.ID" :country="country" />
-  </div>
+  <template v-else>
+    <div class="country-list">
+      <CountryCard v-for="country in filteredCountries" :key="country.ID" :country="country" />
+    </div>
 
-  <div ref="loadMoreHandler" class="country-list__load-more"></div>
+    <div ref="loadMoreHandler" class="country-list__load-more"></div>
+  </template>
 </template>
 
 <script lang="ts" setup>
+import { ref, watch, type Ref } from 'vue';
 import BaseCard from '@/components/base/BaseCard.vue';
 import CountryCard from './CountryCard.vue'
 import { useCountry } from '@/composables/country'
 import { useIntersectionObserver } from '@/composables/observer'
-import { ref, watch, type Ref } from 'vue';
 
 const loadMoreHandler: Ref<Element | null> = ref(null)
-const { filteredCountries, getCountries, isCachingData, loadMoreCountries } = useCountry()
+const { filteredCountries, getCountries, loadMoreCountries, isCachingData, message } = useCountry()
 
 await getCountries()
 
 const intersectionCallback = (entries: IntersectionObserverEntry[]) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      let elem = entry.target
-
-      if (entry.intersectionRatio >= 0.75) {
-        loadMoreCountries()
-      }
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.75) {
+      loadMoreCountries()
     }
   })
 }
